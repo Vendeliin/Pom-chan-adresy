@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,17 +12,18 @@ namespace PomíchanéAdresy
         {
             var data = File.ReadAllLines("./adresy.txt");
             var array = data.ToArray();
-            string[] string2;
+            string[] array2;
 
             string string1;
+
             for(int k = 0; k < array.Length; k++)
             {
                 for (int i = 0; i < 3; i++)
                 {
                     string1 = array[k];
-                    string2 = string1.Split('|');
-                    Array.Reverse(string2);
-                    Console.Write(string2[i] + "/");
+                    array2 = string1.Split('|');
+                    Array.Reverse(array2);
+                    Console.Write(array2[i] + "/");
                 }
                 Console.WriteLine(" ");
             }
