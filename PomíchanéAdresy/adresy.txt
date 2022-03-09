@@ -1,0 +1,4 @@
+guest|users|C:
+Project|repos|D:
+dokumenty|Google Drive|C:
+obrázky|OneDrive|D:
